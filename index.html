@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="app">
+        <header class="app__header">
+            <h1 class="app__title">
+                <a href="#">
+                    <span>Marvel</span>
+                    information portal
+                </a>
+            </h1>
+            <nav class="app__menu">
+                <ul>
+                    <li><a href="#" class="characters">Characters</a></li>
+                    /
+                    <li><a href="#" class="comics">Comics</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="char">
+            <div class="randomchar">
+                <div class="randomchar__block">
+                </div>
+                <div class="randomchar__static">
+                    <p class="randomchar__title">
+                        Random character for today!<br>
+                        Do you want to get to know him better?
+                    </p>
+                    <p class="randomchar__title">
+                        Or choose another one
+                    </p>
+                    <button class="button button__main" id="try-btn">
+                        <div class="inner">try it</div>
+                    </button>
+                    <img src="img/mjolnir.png" alt="mjolnir" class="randomchar__decoration">
+                </div>
+            </div>
+
+            <div class="char__content">
+                <div class="search__box">
+                    <input type="text" class="search">
+                </div>
+                
+                <div class="main__box">
+                <div class="char__list">
+                    <ul class="char__grid">
+                    </ul>
+                    <button class="button button__main button__long" id="load-more">
+                        <div class="inner">load more</div>
+                    </button>
+                </div>
+                
+                <div class="char__info">
+                    
+                    <p class="char__select">Please select a character to see information</p>
+                    <div class="skeleton">
+                        <div class="pulse skeleton__header">
+                            <div class="pulse skeleton__circle"></div>
+                            <div class="pulse skeleton__mini"></div>
+                        </div>
+                        <div class="pulse skeleton__block"></div>
+                        <div class="pulse skeleton__block"></div>
+                        <div class="pulse skeleton__block"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <img class="bg-decoration" src="img/vision.png" alt="vision">
+        </main>
+        <main class="comics-cards hide">
+            <div class="app__banner">
+                <img src="img/Avengers.png" alt="Avengers">
+                <div class="app__banner-text">
+                    New comics every week!<br>
+                    Stay tuned!
+                </div>
+                <img src="img/Avengers_logo.png" alt="Avengers logo">
+            </div>
+            <div class="comics__list">
+                <ul class="comics__grid">
+                </ul>
+                <button class="button button__main button__long" id="load-more-comics">
+                    <div class="inner">load more</div>
+                </button>
+            </div>
+        </main> 
+        <main class="comics-banner hide">
+            <div class="app__banner">
+                <img src="img/Avengers.png" alt="Avengers">
+                <div class="app__banner-text">
+                    New comics every week!<br>
+                    Stay tuned!
+                </div>
+                <img src="img/Avengers_logo.png" alt="Avengers logo">
+            </div>
+            <div class="single-comic">
+                <div class="single-comic__info-item"></div>
+                <a href="#" class="single-comic__back">Back to all</a> 
+            </div>
+        </main> 
+    </div>
+    <script src="js/main.js" type="module"></script>
+</body>
+</html>
